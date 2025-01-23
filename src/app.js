@@ -1,4 +1,4 @@
-import { getTickets, createTicket, deleteTicket } from './api';
+import { getTickets, createTicket, deleteTicket } from '../server';
 import { renderTickets, showModal } from './ui';
 
 document.addEventListener('DOMContentLoaded', async () => {
