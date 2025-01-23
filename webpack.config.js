@@ -11,6 +11,14 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: ASSET_PATH,
   },
+  resolve: {
+    fallback: {
+      crypto: false,
+      zlib: false,
+      async_hooks: false,
+      stream: false,
+    },
+  },
   module: {
     rules: [
       {
