@@ -13,10 +13,12 @@ module.exports = {
   },
   resolve: {
     fallback: {
-      crypto: false,
-      zlib: false,
-      async_hooks: false,
-      stream: false,
+      url: require.resolve('url/'), 
+      crypto: require.resolve('crypto-browserify'), 
+      stream: require.resolve('stream-browserify'), 
+      util: require.resolve('util/'), 
+      assert: require.resolve('assert/'), 
+      zlib: require.resolve('zlib-browserify'), 
     },
   },
   module: {
